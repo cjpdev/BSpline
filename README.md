@@ -2,7 +2,7 @@
 
 Enables the construction of splines in 2D or 3D space using (n) number of control points.
 The repo also include a test MFC application for draw spline in 2D. However,
-the "BSpline" code is designed to work in both 2D or 3D (if you provide values for the Z axis the curve will smoothly deform along (x,y,x) vectors).
+the "BSpline" code is designed to work in both 2D or 3D (if you provide values for the Z axis the curve will smoothly deform along (x,y,z) vectors).
 
 ### MFC test application:
 - Visual Studio Community 2019 - MFC Installation components only required to use test application.
