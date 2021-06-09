@@ -106,7 +106,7 @@ Vector3 BSplineControl::BSplineGetPoint(long index)
 
 void BSplineControl::BSplineCreate(int nResolution, double minDistance)
 {
-	nSplinePoints = bspline.create(controlPoints, splinePoints , 4 , 100/*remove for testing nResolution*/, minDistance);
+	nSplinePoints = bspline.create(controlPoints, splinePoints , 4 , nResolution, minDistance);
 }
 
 /**

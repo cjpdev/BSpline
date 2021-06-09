@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/BSpline2DTest/Debug
+/BSpline2DTest/BSTest.vcxproj.user
+/Debug
+/BSpline/BSplineControl.cpp.bak
