@@ -86,7 +86,7 @@ inline void compute_intervals(int *u, int n, int t)   // figure out the knots
   }
 }
 
-inline Vector3 getPoint(Vector3Array& controlPoints,int max, int index)
+inline Vector3 get_point(Vector3Array& controlPoints,int max, int index)
 {
 	if(index > max)
 	{
@@ -109,9 +109,9 @@ inline void compute_point(int *u, int n, int m, int t, double v, Vector3Array& c
 	for (k=0; k<=n; k++)
 	{
 		temp = blend(k,t,u,v);  // same blend is used for each dimension coordinate
-		calcxyz->x = calcxyz->x + getPoint(controlPoints,m,k).x * temp;
-		calcxyz->y = calcxyz->y + getPoint(controlPoints,m,k).y * temp;
-		calcxyz->z = calcxyz->z + getPoint(controlPoints,m,k).z * temp;
+		calcxyz->x = calcxyz->x + get_point(controlPoints,m,k).x * temp;
+		calcxyz->y = calcxyz->y + get_point(controlPoints,m,k).y * temp;
+		calcxyz->z = calcxyz->z + get_point(controlPoints,m,k).z * temp;
 	}
 }
 
